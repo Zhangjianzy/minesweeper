@@ -24,11 +24,58 @@
 git clone https://github.com/Zhangjianzy/minesweeper.git
 cd minesweeper
 
+# 项目结构
+minesweeper/
+├── public/                    # 存放favicon原始图
+├── dist/                      # 生产构建输出目录
+├── src/                       # 源代码目录
+│   ├── index.ts                # 程序入口
+│   ├── index.html             # 页面结构
+│   ├── index.css              # 全局样式
+│   ├── scripts/
+│   │   ├── models/                 # 游戏模型层
+│   │   │   ├── Cell.ts            # 单元格模型
+│   │   │   └── MinesweeperModel.ts# 游戏核心逻辑
+│   │   ├── views/                  # 视图渲染层
+│   │   │   └── MinesweeperView.ts # Canvas视图
+│   │   ├── controllers/            # 控制器层
+│   │   │   └── MinesweeperController.ts # 事件处理
+│   │   ├── utils/                 # 工具函数
+│   │   │   ├── i18n.ts            # 国际化支持
+│   │   │   └── canvasUtil.ts      # Canvas工具函数
+│   └── locales/               # 多语言文案
+│       ├── zh-CN.json         # 中文文案
+│       └── en.json            # 英文文案
+├── __tests__/                 # 单元测试目录
+│   ├── models/                 # 模型测试
+│   │   ├── Cell.test.ts       # 单元格测试
+│   │   └── MinesweeperModel.test.ts # 游戏逻辑测试
+│   ├── views/                  # 视图测试
+│   │   └── MinesweeperCanvasView.test.ts # 渲染测试
+│   ├── controllers/            # 控制器测试
+│   │   └── MinesweeperController.test.ts # 交互测试
+│   └── utils/                 # 工具类测试
+│       └── i18n.test.ts       # 国际化测试
+├── webpack/                   # Webpack配置目录
+│   ├── webpack.common.js      # 公共配置
+│   ├── webpack.dev.js         # 开发环境配置
+│   └── webpack.prod.js        # 生产环境配置
+├── .eslintrc.js               # ESLint配置
+├── .gitignore                 # Git忽略规则
+├── jest.config.js             # Jest单测驱动配置
+├── package.json               # 项目依赖
+├── pnpm-lock.yaml             # 包依赖锁配置
+├── tsconfig.json              # TypeScript配置
+└── README.md                  # 项目说明文档
+
 # 安装依赖
 pnpm install
 
 # 启动开发服务器
 pnpm dev
+
+# 执行单元测试
+pnpm run test
 
 # 发布打包
 pnpm run build
