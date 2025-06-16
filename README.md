@@ -18,13 +18,7 @@
 - [Node.js](https://nodejs.org/) (v20+)
 - [pnpm](https://pnpm.io/) (v10+)
 
-### 安装与运行
-```bash
-# 克隆项目
-git clone https://github.com/Zhangjianzy/minesweeper.git
-cd minesweeper
-
-# 项目结构
+### 项目结构
 minesweeper/
 ├── public/                    # 存放favicon原始图
 ├── dist/                      # 生产构建输出目录
@@ -67,6 +61,12 @@ minesweeper/
 ├── pnpm-lock.yaml             # 包依赖锁配置
 ├── tsconfig.json              # TypeScript配置
 └── README.md                  # 项目说明文档
+
+### 安装与运行
+```bash
+# 克隆项目
+git clone https://github.com/Zhangjianzy/minesweeper.git
+cd minesweeper
 
 # 安装依赖
 pnpm install
