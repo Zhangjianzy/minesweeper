@@ -1,0 +1,20 @@
+{
+    "gameTitle": "扫雷游戏",
+    "gameDescription": "老铁，欢迎来到我的游戏世界",
+    "statsMinesLabel": "剩余地雷",
+    "statsTimeLabel": "游戏时间",
+    "newGameText": "新游戏",
+    "gameBoardTitle": "游戏棋盘",
+    "languageLabel": "语言:",
+    "settingsTitle": "游戏设置",
+    "rowsLabel": "行数",
+    "colsLabel": "列数",
+    "minesLabel": "地雷数",
+    "gameOver": {
+      "win": "恭喜你！",
+      "winMessage": "太棒了！你在 {time} 内完成了游戏。",
+      "lose": "游戏结束",
+      "loseMessage": "你踩到地雷了！"
+    },
+    "playAgainText": "再玩一次"
+  }

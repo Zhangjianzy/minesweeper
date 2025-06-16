@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <head><meta
+    name="viewport"
+    content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui"
+  />
+  <meta name="author" content="Justin Zhang" />
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <meta name="description" content="经典扫雷游戏，支持自定义棋盘大小和难度">
+  <meta name="keywords" content="扫雷, 游戏, 休闲, 逻辑">
+</head>
+<body>
+  <header class="head-bar">
+    <div class="language-selector">
+      <label for="languageSelect" id="languageLabel">语言:</label>
+      <select id="languageSelect">
+        <option value="zh-CN">中文</option>
+        <option value="en">English</option>
+      </select>
+    </div>
+    <span id="settings" />
+  </header>
+  <div class="container">
+    <header class="game-header">
+      <h1 id="gameTitle">扫雷游戏</h1>
+      <p id="gameDescription">经典的扫雷游戏，挑战你的逻辑思维能力</p>
+    </header>
+    
+    <div class="game-stats">
+      <div class="stat-card">
+        <div class="stat-label" id="statsMinesLabel">剩余地雷</div>
+        <div class="stat-value" id="minesLeft">0</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label" id="statsTimeLabel">游戏时间</div>
+        <div class="stat-value" id="timer">00:00</div>
+      </div>
+      <div class="stat-card">
+        <button id="newGameBtn" class="btn">
+          <span id="newGameText">新游戏</span>
+        </button>
+      </div>
+    </div>
+    
+    <div class="game-board-container">
+      <div class="board-header">
+        <h2 id="gameBoardTitle">游戏棋盘</h2>
+      </div>
+      <div class="canvas-container">
+        <canvas id="gameCanvas" class="game-canvas"></canvas>
+      </div>
+    </div>
+    
+    <div class="game-settings">
+      <h2 id="settingsTitle">游戏设置</h2>
+      <div class="settings-fields">
+        <div class="setting-field">
+          <label for="rows" id="rowsLabel">行数</label>
+          <input type="number" id="rows" min="10" max="50" value="10">
+        </div>
+        <div class="setting-field">
+          <label for="cols" id="colsLabel">列数</label>
+          <input type="number" id="cols" min="10" max="50" value="10">
+        </div>
+        <div class="setting-field">
+          <label for="mines" id="minesLabel">地雷数</label>
+          <input type="number" id="mines" min="1" max="100" value="8">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="gameOverModal" class="modal">
+    <div class="modal-content">
+      <div id="gameOverIcon" class="modal-icon">❓</div>
+      <h2 id="gameOverTitle" class="modal-title"></h2>
+      <p id="gameOverMessage" class="modal-message"></p>
+      <button id="playAgainBtn" class="btn">
+        <span id="playAgainText">再玩一次</span>
+      </button>
+    </div>
+  </div>
+</body>
+</html>

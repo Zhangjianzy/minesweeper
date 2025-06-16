@@ -1,0 +1,20 @@
+{
+    "gameTitle": "Minesweeper",
+    "gameDescription": "Hey bro, thx for playing my game",
+    "statsMinesLabel": "Mines Left",
+    "statsTimeLabel": "Game Time",
+    "newGameText": "New Game",
+    "gameBoardTitle": "Game Board",
+    "languageLabel": "Language:",
+    "settingsTitle": "Game Settings",
+    "rowsLabel": "Rows",
+    "colsLabel": "Columns",
+    "minesLabel": "Mines",
+    "gameOver": {
+      "win": "Congratulations!",
+      "winMessage": "Great job! You completed the game in {time}.",
+      "lose": "Game Over",
+      "loseMessage": "You hit a mine!"
+    },
+    "playAgainText": "Play Again"
+  }
