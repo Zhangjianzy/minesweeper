@@ -19,6 +19,7 @@
 - [pnpm](https://pnpm.io/) (v10+)
 
 ### 项目结构
+```bash
 minesweeper/
 ├── public/                    # 存放favicon原始图
 ├── dist/                      # 生产构建输出目录
@@ -61,6 +62,7 @@ minesweeper/
 ├── pnpm-lock.yaml             # 包依赖锁配置
 ├── tsconfig.json              # TypeScript配置
 └── README.md                  # 项目说明文档
+```
 
 ### 安装与运行
 ```bash
@@ -79,3 +81,4 @@ pnpm run test
 
 # 发布打包
 pnpm run build
+```
